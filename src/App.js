@@ -1,21 +1,21 @@
 import "./components/images/images";
-import "./App.css";
+import "./App.module.css";
 import teamData from "./components/data/iplTeams";
 import Cards from "./components/cards/cards";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
+import React from "react";
 
 function App() {
   return (
     <>
       <Header></Header>
-      <div className="grid">
+      <div>
         {teamData.map((eachTeam) => (
           <Cards
             name={eachTeam.name}
             source={eachTeam.source}
             wins={eachTeam.wins}
-            key={eachTeam.id}
           ></Cards>
         ))}
       </div>
