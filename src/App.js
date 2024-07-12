@@ -1,26 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./components/images/images";
+import "./App.css";
+import teamData from "./components/data/iplTeams";
+import Cards from "./components/cards/cards";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>Hi!, My Name is Chaitanya.</p>
-        <p>This is feature 1</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <header></header>
+      <div className="grid">
+        {teamData.map((eachTeam) => (
+          <Cards
+            name={eachTeam.name}
+            source={eachTeam.source}
+            key={eachTeam.id}
+          ></Cards>
+        ))}
+      </div>
+      <footer></footer>
+    </>
   );
 }
 
