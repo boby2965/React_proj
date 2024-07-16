@@ -1,5 +1,5 @@
 import "./components/images/images";
-import "./App.module.css";
+import "./App.css";
 import teamData from "./components/data/iplTeams";
 import Cards from "./components/cards/cards";
 import Header from "./components/header/header";
