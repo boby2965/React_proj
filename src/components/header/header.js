@@ -1,26 +1,28 @@
+import "./header.css";
+
 const Header = () => {
   return (
-    <header class="header">
-      <nav class="navbar">
-        <div class="nav-left">
-          <a href="#" class="nav-link">
+    <header className="header">
+      <nav className="navbar">
+        <div className="nav-left">
+          <a href="#" className="nav-link">
             Home
           </a>
-          <a href="#" class="nav-link">
+          <a href="#" className="nav-link">
             About
           </a>
-          <a href="#" class="nav-link">
+          <a href="#" className="nav-link">
             Contact
           </a>
-          <a href="#" class="nav-link active">
+          <a href="#" className="nav-link active">
             Services
           </a>
         </div>
-        <div class="nav-right">
-          <a href="#" class="login">
+        <div className="nav-right">
+          <a href="#" className="login">
             Login
           </a>
-          <a href="#" class="signin">
+          <a href="#" className="signin">
             Sign in
           </a>
         </div>

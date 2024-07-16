@@ -10,9 +10,10 @@ function App() {
   return (
     <>
       <Header></Header>
-      <div>
+      <div className="grid">
         {teamData.map((eachTeam) => (
           <Cards
+            key={eachTeam.id}
             name={eachTeam.name}
             source={eachTeam.source}
             wins={eachTeam.wins}
