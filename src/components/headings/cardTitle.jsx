@@ -1,7 +1,11 @@
 import "./cardTitle.css";
 
 const CardTitle = (prop) => {
-  return <h2>{prop.name}</h2>;
+  return (
+    <div>
+      <h2>{prop.name}</h2>
+    </div>
+  );
 };
 
 export default CardTitle;

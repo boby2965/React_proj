@@ -18,7 +18,7 @@ const Cards = (prop) => {
         <p>Trophies Won: {wins}</p>
         <p>Players: 25</p>
       </div>
-      <Button text="Learn More"></Button>
+      <Button className="btn" text="Learn More"></Button>
     </div>
   );
 };
