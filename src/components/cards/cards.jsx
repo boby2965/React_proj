@@ -6,15 +6,15 @@ import "./cards.css";
 const Cards = (prop) => {
   const { name, source, key, wins } = prop;
 
-  function Add() {
-    let val = querySelector("progress-bar").value;
-    val = val + 1;
-  }
+  // function Add() {
+  //   let val = querySelector("progress-bar").value;
+  //   val = val + 1;
+  // }
 
-  function Sub() {
-    let val = querySelector("progress-bar").value;
-    val = val - 1;
-  }
+  // function Sub() {
+  //   let val = querySelector("progress-bar").value;
+  //   val = val - 1;
+  // }
 
   return (
     <div className="card">
@@ -31,7 +31,7 @@ const Cards = (prop) => {
       </div>
       <progress className="progress-bar" value={wins} max="30"></progress>
       <div className="button-group">
-        <button className="card-button" onClick={Add} id="increase-button">
+        {/* <button className="card-button" onClick={Add} id="increase-button">
           +
         </button>
         <button className="card-button" onClick={Sub} id="decrease-button">
@@ -39,7 +39,7 @@ const Cards = (prop) => {
         </button>
         <button className="card-button" onClick={Reset} id="reset-button">
           Reset
-        </button>
+        </button> */}
       </div>
       <div className="btn">
         <Button text="Learn More"></Button>

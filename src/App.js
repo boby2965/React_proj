@@ -5,11 +5,14 @@ import Cards from "./components/cards/cards";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import React from "react";
+import Counter from "./components/classComponent/counter";
 
 function App() {
   return (
     <>
-      <Header></Header>
+      <Counter></Counter>
+
+      {/* <Header></Header>
       <div className="grid">
         {teamData.map((eachTeam) => (
           <Cards
@@ -20,7 +23,7 @@ function App() {
           ></Cards>
         ))}
       </div>
-      <Footer></Footer>
+      <Footer></Footer> */}
     </>
   );
 }
