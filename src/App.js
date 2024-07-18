@@ -6,11 +6,12 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import React from "react";
 import Counter from "./components/classComponent/counter";
+import Restaurant from "./components/classComponent/restaurant";
 
 function App() {
   return (
     <>
-      <Counter></Counter>
+      <Restaurant></Restaurant>
 
       {/* <Header></Header>
       <div className="grid">
